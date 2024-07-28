@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+    <defs>
+        <style>
+            .cls-2{fill:none}
+        </style>
+    </defs>
+    <g id="그룹_34597" data-name="그룹 34597" transform="translate(-1039 -706)">
+        <g id="사각형_9629" data-name="사각형 9629" transform="translate(1039 706)" style="stroke:#cecece;fill:none">
+            <rect width="54" height="54" rx="6" style="stroke:none"/>
+            <rect class="cls-2" x=".5" y=".5" width="53" height="53" rx="5.5"/>
+        </g>
+        <g id="printer-line_1_" data-name="printer-line (1)" transform="translate(1054 721)">
+            <path id="패스_39717" data-name="패스 39717" class="cls-2" d="M0 0h24v24H0z"/>
+            <path id="패스_39718" data-name="패스 39718" d="M6 19H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm0-2v-1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1h2V9H4v8zM8 4v3h8V4zm0 13v3h8v-3zm-3-7h3v2H5z" style="fill:#ff8d1a"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>2depth &lt; 1depth</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+<meta name="format-detection" content="telephone=no"/>
+
+<link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
+<link type="text/css" rel="stylesheet" href="../css/style.css" /><!-- 공통 -->
+<link type="text/css" rel="stylesheet" href="../css/sub.css" />
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/design.js"></script><!-- 공통 -->
+<script src="../js/sub.js"></script>
+</head>
+
+<body>
+
+
+<!-- skip nav -->
+<div id="skip_nav">
+	<ul>
+		<li><a href="#container" onclick="document.getElementById('container').tabIndex = -1;document.getElementById('container').focus();return false;">본문 바로가기</a></li>
+		<li><a href="#gnb" class="pc_allmenu" onclick="document.getElementById('gnb').tabIndex = -1;document.getElementById('gnb').focus();return false;">주메뉴 바로가기</a></li>
+	</ul>
+</div>
+<!--// skip nav -->
+
+<div id="wrap">
+
+	<!-- head -->
+	<header id="header">
+
+		<div class="head_top">
+			<div class="inner_center">
+                <div class="util">
+                    <ul class="top_util">
+                        <li><a href="#"><span class="ico" style="background-image:url('../images/ico_util_home.svg');"></span>홈</a></li>
+                        <li><a href="#"><span class="ico" style="background-image:url('../images/ico_util_login.svg');"></span>로그인</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+
+        <div class="head_con">
+            <div class="inner_center">
+                <h1 class="logo"><a href="#">홍주문화관광재단</a></h1>
+
+                <div class="head_gnb">
+                    <ul class="gnb" id="gnb">
+                        <li>
+                            <a href="#"><span>문화사업</span></a>
+                            <div class="depth_box">
+                                <div class="depth_tit">
+                                    <h2 class="tit">문화사업</h2>
+                                </div>
+                                <ul class="depth">
+                                    <li><a href="#">합창단</a></li>
+                                    <li><a href="#">무용단</a></li>
+                                    <li><a href="#">오케스트라</a></li>
+                                    <li><a href="#">국악현악단</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>축제·행사</span></a>
+                            <div class="depth_box">
+                                <div class="depth_tit">
+                                    <h2 class="tit">축제·행사</h2>
+                                </div>
+                                <ul class="depth">
+                                    <li><a href="#">홍성역사인물축제</a></li>
+                                    <li><a href="#">홍성한우 바비큐페스티벌</a></li>
+                                    <li><a href="#">전국케이팝 뮤직콘테스트</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>아카이브</span></a>
+                            <div class="depth_box">
+                                <div class="depth_tit">
+                                    <h2 class="tit">아카이브</h2>
+                                </div>
+                                <ul class="depth">
+                                    <li><a href="#">포토갤러리</a></li>
+                                    <li><a href="#">영상갤러리</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>알림마당</span></a>
+                            <div class="depth_box">
+                                <div class="depth_tit">
+                                    <h2 class="tit">알림마당</h2>
+                                </div>
+                                <ul class="depth">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">보도자료</a></li>
+                                    <li><a href="#">경영공시</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span>재단소개</span></a>
+                            <div class="depth_box">
+                                <div class="depth_tit">
+                                    <h2 class="tit">재단소개</h2>
+                                </div>
+                                <ul class="depth">
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">비전 · 연혁</a></li>
+                                    <li><a href="#">CI소개</a></li>
+                                    <li><a href="#">임원소개</a></li>
+                                    <li><a href="#">조직도</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <fieldset class="search_field">
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+                    <button class="btn_search">검색</button>
+                </fieldset>
+            </div>
+        </div>
+
+	</header>
+	<!--// head -->
+
+	<!-- mobile head -->
+	<header id="mHeader">
+        <h1 class="m_logo"><a href="#">홍주문화관광재단</a></h1>
+	</header>
+
+    <button class="btn_search_toggle" onclick="toggleSearch()">검색영역 열기/닫기</button>
+    <div class="m_search_field">
+        <div class="mask" onclick="toggleSearch()"></div>
+        <fieldset>
+            <legend>검색영역</legend>
+            <input type="text" title="검색어를 입력하세요" placeholder="검색어를 입력하세요" />
+            <button class="btn_search">검색</button>
+        </fieldset>
+    </div>
+    
+
+    <button class="btn_allmenu" onclick="toggleAllMenu()">전체메뉴 열기/닫기</button>
+    <div class="m_allmenu_wrap">
+        <div class="m_allmenu_mask" onclick="toggleAllMenu()"></div>
+        <div class="m_allmenu_cont">
+            <div class="m_allmenu_head">
+                <ul class="m_util">
+                    <li><a href="#"><span class="ico" style="background-image:url('../images/ico_util_home.svg');"></span>홈</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+            <div class="m_allmenu_login_join">
+                <ul class="login_join">
+                    <li><a href="#"><span class="ico" style="background-image:url('../images/m_ico_allmenu_login.svg');"></span>로그인</a></li>
+                    <li><a href="#"><span class="ico" style="background-image:url('../images/m_ico_allmenu_join.svg');"></span>회원가입</a></li>
+                </ul>
+            </div>
+            <div class="m_allmenu">
+                <ul class="m_gnb">
+                    <li>
+                        <a href="javascript:;"><span>문화사업</span></a>
+                        <div class="depth_box">
+                            <ul class="depth">
+                                <li><a href="#">합창단</a></li>
+                                <li><a href="#">무용단</a></li>
+                                <li><a href="#">오케스트라</a></li>
+                                <li><a href="#">국악현악단</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>축제·행사</span></a>
+                        <div class="depth_box">
+                            <ul class="depth">
+                                <li><a href="#">홍성역사인물축제</a></li>
+                                <li><a href="#">홍성한우 바비큐페스티벌</a></li>
+                                <li><a href="#">전국케이팝 뮤직콘테스트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>아카이브</span></a>
+                        <div class="depth_box">
+                            <ul class="depth">
+                                <li><a href="#">포토갤러리</a></li>
+                                <li><a href="#">영상갤러리</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>알림마당</span></a>
+                        <div class="depth_box">
+                            <ul class="depth">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">경영공시</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><span>재단소개</span></a>
+                        <div class="depth_box">
+                            <ul class="depth">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">비전 · 연혁</a></li>
+                                <li><a href="#">CI소개</a></li>
+                                <li><a href="#">임원소개</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<!--// mobile head -->
+
+	<!-- container -->
+	<div id="container">
+        
+        <div class="sub_visual">
+            <h2 class="visual_tit">문화와 관광의 도시 홍성</h2>
+        </div>
+
+        <div class="sub_content">
+            <div class="inner_center">
+                    
+                <div class="sub_headbar">
+                    <a href="#" class="link_home">홈</a>
+                    <div class="sub_depth_box">
+                        <a href="#subDepth" title="현재위치1뎁스, 클릭시 기타메뉴선택">1depth</a>
+                        <ul id="subDepth" class="sub_depth">
+                            <li><a href="#">1depth</a></li>
+                            <li><a href="#">1depth</a></li>
+                            <li><a href="#">1depth</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub_depth_box">
+                        <a href="#subDepth" title="현재위치2뎁스, 클릭시 기타메뉴선택">2depth</a>
+                        <ul id="subDepth" class="sub_depth">
+                            <li><a href="#">2depth</a></li>
+                            <li><a href="#">2depth</a></li>
+                            <li><a href="#">2depth</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sub_titbox">
+                    <h2 class="title">2depth</h2>
+                    <ul class="right_btns">
+                        <li class="share">
+                            <a href="#shareBox" onclick="shareToggle(); return false;" class="ico ico_share">공유하기</a>
+                            <div class="share_box" id="shareBox">
+                                <h3 class="tit">공유하기</h3>
+                                <div class="copy_url">
+                                    <input type="text" value="https://nics.me.go.kr/nics.me.go.kr/nics.me.go.kr/nics.me.go.kr/" title="공유할 url주소" readonly="readonly" />
+                                    <button class="btn_copy">복사</button>
+                                </div>
+                                <ul>
+                                    <li><a href="#" class="ico" target="_blank" title="새창열림" style="background-image:url('../images/btn_sns_naverblog.svg');">네이버블로그로 공유하기</a></li>
+                                    <li><a href="#" class="ico" target="_blank" title="새창열림" style="background-image:url('../images/btn_sns_facebook.svg');">페이스북으로 공유하기</a></li>
+                                    <li><a href="#" class="ico" target="_blank" title="새창열림" style="background-image:url('../images/btn_sns_twitter.svg');">트위터로 공유하기</a></li>
+                                    <li><a href="#" class="ico" target="_blank" title="새창열림" style="background-image:url('../images/btn_sns_instagram.svg');">인스타그램으로 공유하기</a></li>
+                                    <li><a href="#" class="ico" target="_blank" title="새창열림" style="background-image:url('../images/btn_sns_kakaotalk.svg');">카카오톡으로 공유하기</a></li>
+                                </ul>
+                                <button class="close_sharebox" onclick="shareToggle()">닫기</button>
+                            </div>
+                        </li>
+                        <li class="print"><a href="#" class="ico ico_print">인쇄하기</a></li>
+                    </ul>
+                </div>
+
+                <div class="sub_cont">
+                    <!-- 내용 -->
+                    <!-- 내용 -->
+                    <!-- 내용 -->
+
+                    <!-- js_tab -->
+                    <div class="js_tab">
+                        <div class="sub_tabbox">
+                            <ul>
+                                <li class="active"><a href="#tabCont1-1" title="현재 활성화"><span>Select</span></a></li>
+                                <li><a href="#tabCont1-2"><span>Hover</span></a></li>
+                                <li><a href="#tabCont1-3"><span>1/N</span></a></li>
+                                <li><a href="#tabCont1-4"><span>1/N</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div id="tabCont1-1" class="js_tabcont active">
+                            111111
+                        </div>
+                        <div id="tabCont1-2" class="js_tabcont ">
+                            22222
+                        </div>
+                        <div id="tabCont1-3" class="js_tabcont ">
+                            3333
+                        </div>
+                        <div id="tabCont1-4" class="js_tabcont ">
+                            4444
+                        </div>
+
+                    </div>
+                    <!--// js_tab -->
+
+                    <br />
+                    <br />
+
+                    <!-- js_tab -->
+                    <div class="js_tab">
+                        <div class="sub_tabbox">
+                            <ul>
+                                <li><a href="#tabCont2-1"><span>AAA</span></a></li>
+                                <li class="active"><a href="#tabCont2-2" title="현재 활성화"><span>BBB</span></a></li>
+                                <li><a href="#tabCont2-3"><span>CCC</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div id="tabCont2-1" class="js_tabcont ">
+                            111111
+                        </div>
+                        <div id="tabCont2-2" class="js_tabcont active">
+                            22222
+                        </div>
+                        <div id="tabCont2-3" class="js_tabcont ">
+                            3333
+                        </div>
+
+                    </div>
+                    <!--// js_tab -->
+
+                    <br />
+                    <br />
+
+                    <div class="sub_tabbox">
+                        <ul>
+                            <li class="active"><a href="#" title="현재 활성화"><span>링크1</span></a></li>
+                            <li><a href="#"><span>링크2</span></a></li>
+                            <li><a href="#"><span>링크3</span></a></li>
+                        </ul>
+                    </div>
+
+                    <br />
+                    <br />
+
+                    <!-- js_tab_in_tab -->
+                    <div class="js_tab_in_tab">
+                        <div class="sub_in_tabbox">
+                            <ul>
+                                <li class="active"><a href="#tabInTabCont1" title="현재 활성화">Tap-in-Tap</a></li>
+                                <li><a href="#tabInTabCont2">Tap-in-Tap</a></li>
+                                <li><a href="#tabInTabCont3">Tap-in-Tap</a></li>
+                                <li><a href="#tabInTabCont4">Tap-in-Tap</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="tabInTabCont1" class="js_tab_in_tabcont active">
+                            Tap-in-Tap-Cont 1
+                        </div>
+                        <div id="tabInTabCont2" class="js_tab_in_tabcont">
+                            Tap-in-Tap-Cont 2
+                        </div>
+                        <div id="tabInTabCont3" class="js_tab_in_tabcont">
+                            Tap-in-Tap-Cont 3
+                        </div>
+                        <div id="tabInTabCont4" class="js_tab_in_tabcont">
+                            Tap-in-Tap-Cont 4
+                        </div>
+                    </div>
+                    <!--// js_tab_in_tab -->
+
+                    <br />
+                    <br />
+
+                    <!-- 링크형 -->
+                    <div class="sub_in_tabbox">
+                        <ul>
+                            <li class="active"><a href="#" title="현재 활성화">링크1</a></li>
+                            <li><a href="#">링크2</a></li>
+                            <li><a href="#">링크3</a></li>
+                            <li><a href="#">링크4</a></li>
+                        </ul>
+                    </div>
+                    <!--// 링크형 -->
+
+
+                    <h3 class="htit_bl18">제7조(개인정보의 파기)</h3>
+                    <p class="htit_bl16">충청남도 도시재생지원센터는 원칙적으로 개인정보 처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.</p>
+                    <ul>
+                        <li class="htit_bl14">이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류) 내부 방침 및 기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.</li>
+                        <li class="htit_bl14">이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에, 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.</li>
+                        <li class="htit_bl14">전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용합니다. 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.</li>
+                    </ul>
+
+                    <div class="mobile_scroll mgt30">
+                        <div class="mobile_minwidth">
+                            <p class="txt_ex_scroll">좌우로 스크롤 해보세요</p>
+                            <!-- 테이블 영역 -->
+                            <table class="table_data">
+                                <caption>파일내역표 - 순번, 개인정보 파일명, 보유근거, 처리목적, 보유기간으로 구성</caption>
+                                <colgroup>
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">개인정보 파일명</th>
+                                        <th scope="col">보유근거</th>
+                                        <th scope="col">처리목적</th>
+                                        <th scope="col">보유기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>메일링 서비스</td>
+                                        <td>정보주체의 동의</td>
+                                        <td>정책동향 배포</td>
+                                        <td>수신거부 시까지</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>교육 서비스</td>
+                                        <td>정보주체의 동의</td>
+                                        <td>역량강화 교육에 대한 본인인증,<br />교육이력관리, 교육수료증 발급</td>
+                                        <td>1년</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--// 테이블 영역 -->
+                        </div>
+                    </div>
+
+
+                    <!--// 내용 -->
+                    <!--// 내용 -->
+                    <!--// 내용 -->
+                </div>    
+
+            </div><!--// inner_center -->
+        </div><!--// sub_content -->
+	
+	</div>
+	<!--// container -->
+
+	<!-- foot -->
+	<footer id="footer">
+
+        <div class="foot_link_wrap">
+            <div class="inner_center">
+                <ul class="foot_link">
+                    <li><a href="#" class="active">개인정보처리방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <ul class="foot_sns">
+                    <li><a href="#" title="새창열림" target="_blank" style="background-image:url('../images/ico_sns_white_facebook.svg')">페이스북</a></li>
+                    <li><a href="#" title="새창열림" target="_blank" style="background-image:url('../images/ico_sns_white_instagram.svg')">인스타그램</a></li>
+                    <li><a href="#" title="새창열림" target="_blank" style="background-image:url('../images/ico_sns_white_youtube.svg')">유튜브</a></li>
+                    <li><a href="#" title="새창열림" target="_blank" style="background-image:url('../images/ico_sns_white_naverband.svg')">네이버 밴드</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="foot_address">
+			<div class="inner_center">
+				<a href="#" class="foot_logo">홍주문화관광재단</a>
+                <div class="txt_box">
+                    <p class="address">(32223) 충청남도 홍성군 홍북읍 조양로 120번길 16<br />대표전화 : 041-631-8840</p>
+                    <p class="copyright">COPYRIGHTS 2021 <span class="mobile_br"></span>ⓒ HONNGHUCULTURE FOUNDATION.<span class="mobile_br"></span>All rights reserved.</p>
+                </div>
+			</div>
+		</div>
+
+	</footer>
+	<!--// foot end -->
+
+</div>
+
+</body>
+</html>
