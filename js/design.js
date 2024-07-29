@@ -10,7 +10,7 @@ $(function(){
 	$('#gnb > li').on('mouseleave',function(){
 		$(this).removeClass('active');
 	});
-	$('.logo a, .search_field input').on('focus',function(){
+	$('.logo a, .top_util a').on('focus',function(){
 		$('#gnb > li').removeClass('active');
 		$('#gnb').removeClass('open');
 	});
