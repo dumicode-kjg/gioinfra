@@ -84,6 +84,7 @@
   z-index: 90;
 }
 #mHeader,
+.btn_lang,
 .btn_allmenu,
 .m_allmenu_wrap {
   display: none;
@@ -291,7 +292,7 @@
 }
 .foot_link_wrap .foot_link {
   display: flex;
-	width: 100%;
+  width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .foot_link_wrap .foot_link li {
@@ -314,13 +315,13 @@
 }
 .foot_address .inner_center {
   display: flex;
-	justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
-	width: 100%;
+  width: 100%;
 }
 .foot_address .foot_logo {
   order: 1;
-	flex: none;
+  flex: none;
   width: 161px;
   height: 45px;
   background-image: url("../images/foot_logo.svg");
@@ -331,29 +332,28 @@
   overflow: hidden;
 }
 .foot_address .txt_box {
-	flex: 1;
+  flex: 1;
 }
 .foot_address .txt_box .txt {
-	color: #fff;
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
 }
 .foot_address .txt_box .txt .ico_line {
-	display: inline-flex;
-	width: 1px;
-	height: 10px;
-	margin: 0 12px;
-	background: #C6C6C6;
+  display: inline-flex;
+  width: 1px;
+  height: 10px;
+  margin: 0 12px;
+  background: #c6c6c6;
 }
 .foot_address .txt_box .copyright {
-	color: #fff;
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 400;
-	opacity: 0.6;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  opacity: 0.6;
 }
-
 
 @media screen and (max-width: 1420px) {
   #gnb.open > li > .depth_box {
@@ -397,43 +397,56 @@
   #mHeader {
     display: block;
     position: relative;
-    height: 85px;
-    border-bottom: 1px solid #cecece;
+    height: 92px;
+    border-bottom: 1px solid #b7b7b7;
     background: #fff;
     z-index: 90;
   }
   #mHeader .m_logo {
     position: absolute;
     top: 50%;
-    left: 20px;
-    width: 247px;
-    height: 40px;
-    margin-top: -20px;
+    left: 35px;
+    width: 219px;
+    height: 60px;
+    transform: translateY(-50%);
   }
   #mHeader .m_logo a {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("../images/t_logo.svg");
+    background-image: url("../images/logo.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
-    text-indent: -999px;
+    background-size: contain;
+    text-indent: -9999px;
     overflow: hidden;
+  }
+
+  .btn_lang {
+    display: block;
+    position: absolute;
+    top: 31px;
+    right: 81px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/m_btn_lang.svg") no-repeat center;
+    background-size: 30px;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 91;
   }
 
   .btn_allmenu {
     display: block;
     position: absolute;
-    top: 17px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    top: 31px;
+    right: 35px;
+    width: 30px;
+    height: 30px;
     border: none;
-    border-radius: 4px;
-    background: url("../images/m_btn_allmenu_white.svg") no-repeat center center #0e3848;
+    background: url("../images/m_btn_allmenu.svg") no-repeat center;
     background-size: 30px;
-    text-indent: -999px;
+    text-indent: -9999px;
     overflow: hidden;
     z-index: 100;
     transition: 0.3s;

@@ -174,6 +174,8 @@
         <h1 class="m_logo"><a href="#">홍주문화관광재단</a></h1>
       </header>
 
+      <a href="#" class="btn_lang">LANG</a>
+
       <button class="btn_allmenu" onclick="toggleAllMenu()">전체메뉴 열기/닫기</button>
       <div class="m_allmenu_wrap">
         <div class="m_allmenu_mask" onclick="toggleAllMenu()"></div>
@@ -362,9 +364,7 @@
                       <a href="#" class="inbox">
                         <span class="txt_type type02">학회소식</span>
                         <h4 class="tit">학회소식 제목입니다. 학회소식 제목입니다. 학회소식 제목입니다. 학회소식 제목입니다. 학회소식 제목입니다. 학회소식 제목입니다. 학회소식 제목입니다. 학회소식 제목입니다. 학회소식 제목입니다.</h4>
-                        <p class="txt">
-                          내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.
-                        </p>
+                        <p class="txt">내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.</p>
                         <div class="date_more">
                           <span class="date">2024-06-13</span>
                           <span class="more">자세히보기</span>
@@ -506,7 +506,9 @@
                   <li class="swiper-slide">
                     <a href="#" class="inbox">
                       <div class="imgbox">
-                        <div class="img" style="background-image: url(../images/main/img_gallery02.jpg)"></div>
+                        <!-- 이미지 없을 시 -->
+                        <div class="noimg"></div>
+                        <!--// 이미지 없을 시 -->
                       </div>
                       <div class="txtbox">
                         <p class="tit">2020년 정기학술발표회 2020년 정기학술발표회 2020년 정기학술발표회</p>
@@ -528,7 +530,9 @@
                   <li class="swiper-slide">
                     <a href="#" class="inbox">
                       <div class="imgbox">
-                        <div class="img" style="background-image: url(../images/main/img_gallery02.jpg)"></div>
+                        <!-- 이미지 없을 시 -->
+                        <div class="noimg"></div>
+                        <!--// 이미지 없을 시 -->
                       </div>
                       <div class="txtbox">
                         <p class="tit">2020년 정기학술발표회 2020년 정기학술발표회 2020년 정기학술발표회</p>
@@ -538,6 +542,14 @@
                   </li>
                 </ul>
               </div>
+              <!-- 게시물 없을 시 -->
+              <!-- <div class="nodata_box_wrap">
+                <div class="nodata_box">
+                  <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
+                  <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
+                </div>
+              </div> -->
+              <!--// 게시물 없을 시 -->
             </div>
             <div class="ma_bnzone">
               <div class="titlebox">
@@ -589,6 +601,14 @@
                   </li>
                 </ul>
               </div>
+              <!-- 게시물 없을 시 -->
+              <!-- <div class="nodata_box_wrap">
+                <div class="nodata_box">
+                  <div class="ico" style="background-image: url(../images/bg_40_nodata_8e8e8e.svg)"></div>
+                  <p class="txt" style="color: #717171">등록된 게시글이 없습니다.</p>
+                </div>
+              </div> -->
+              <!--// 게시물 없을 시 -->
             </div>
           </div>
           <!--// 학회 갤러리, 배너존 -->
