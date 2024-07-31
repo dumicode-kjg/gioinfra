@@ -66,6 +66,12 @@ $(function () {
     slidesPerGroup: 2,
     spaceBetween: 16,
     loop: true,
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+    },
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -115,6 +121,7 @@ $(function () {
   });
 
   var maBnZone = new Swiper(".ma_bnzone .swiper-container", {
+    spaceBetween : 16,
     loop: true,
     autoplay: {
       delay: 3000,
@@ -164,39 +171,38 @@ $(function () {
     },
   });
 
-	//foot banners
-  var footBnSwiper = new Swiper('.foot_banners .swiper-container', {
+  //foot banners
+  var footBnSwiper = new Swiper(".foot_banners .swiper-container", {
     autoplay: {
       delay: 4000,
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
-    slidesPerView: 'auto',
-		loop: true,
+    slidesPerView: "auto",
+    loop: true,
     observer: true,
     observeParents: true,
     navigation: {
-      nextEl: '.foot_banners .swiper-button-next',
-      prevEl: '.foot_banners .swiper-button-prev',
+      nextEl: ".foot_banners .swiper-button-next",
+      prevEl: ".foot_banners .swiper-button-prev",
     },
     on: {
       init: function (swiper) {
         //자동play 켜고닫기
-        $('.foot_banners .swiper_ctrl .btn_stop_play').click(function () {
-          if ($(this).hasClass('stop')) {
+        $(".foot_banners .swiper_ctrl .btn_stop_play").click(function () {
+          if ($(this).hasClass("stop")) {
             footBnSwiper.autoplay.start();
-          }
-          else {
+          } else {
             footBnSwiper.autoplay.stop();
           }
         });
       },
       autoplayStart: function () {
-        $('.foot_banners .swiper_ctrl .btn_stop_play').removeClass('stop');
+        $(".foot_banners .swiper_ctrl .btn_stop_play").removeClass("stop");
       },
       autoplayStop: function () {
-        $('.foot_banners .swiper_ctrl .btn_stop_play').addClass('stop');
-      }
+        $(".foot_banners .swiper_ctrl .btn_stop_play").addClass("stop");
+      },
     },
   });
   $(".foot_banners .swiper-slide a").each(function (index) {

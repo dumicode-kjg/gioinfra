@@ -1,77 +1,53 @@
 @charset "utf-8";
 
-.btn_view_pop {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  opacity: 0.01;
-  text-indent: -999px;
-  overflow: hidden;
-}
 .main_notice_pop {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 450px;
-  z-index: 9999;
-  outline: none;
-}
-.main_notice_pop .mask {
-  position: fixed;
-  top: 0;
+  top: 130px;
   right: 0;
-  bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
 }
 .main_notice_pop .pop_con {
   position: relative;
-  overflow: hidden;
-  outline: none;
-}
-.main_notice_pop:focus .pop_con {
-  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.6);
+  width: 460px;
+  z-index: 1;
 }
 .main_notice_pop .pop_con .img img {
-  max-width: 100%;
+  width: 100%;
 }
 .main_notice_pop .pop_con .btns {
   display: flex;
-  background: #f8f8f8;
+  background: #212121;
 }
 .main_notice_pop .pop_con .btns .btn_invisible {
   flex: 1;
   position: relative;
   padding: 13px 0;
   border: none;
-  background: #343434;
+  background: #555;
   color: #fff;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: -0.8px;
 }
 .main_notice_pop .pop_con .btns .btn_close {
   flex: 1;
   position: relative;
   padding: 13px 0;
   border: none;
-  background: #000;
+  background: #1d1d1d;
   color: #fff;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: -0.8px;
 }
 .main_notice_pop .pop_con .btns button span {
   display: inline-block;
   vertical-align: top;
-}
-.main_notice_pop .pop_con .btns button:hover span,
-.main_notice_pop .pop_con .btns button:focus span {
-  text-decoration: underline;
 }
 
 #wrap {
@@ -408,10 +384,13 @@
 
 @media screen and (max-width: 1279px) {
   .main_notice_pop {
-    outline: none;
+    top: 92px;
   }
-  .main_notice_pop:focus .pop_con {
-    box-shadow: none;
+  .main_notice_pop .pop_con {
+    position: absolute;
+    left: 50%;
+    width: 460px;
+    margin-left: -230px;
   }
 
   #wrap {
@@ -654,6 +633,11 @@
     min-height: calc(100vh - 350px);
   }
 
+  .go_top {
+    right: 0;
+    bottom: 128px;
+  }
+
   .t_br {
     display: block;
   }
@@ -688,11 +672,25 @@
 /* mobile */
 @media screen and (max-width: 767px) {
   .main_notice_pop {
+    top: 70px;
+  }
+  .main_notice_pop .pop_con {
+    right: 16px;
+    left: 16px;
     width: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 10px;
-    outline: none;
+    margin-left: 0;
+  }
+  .main_notice_pop .pop_con .btns .btn_invisible {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.7px;
+  }
+  .main_notice_pop .pop_con .btns .btn_close {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.7px;
   }
 
   .mobile_br {
@@ -704,71 +702,29 @@
   } /* 디바이스별 변경가능 */
 
   #mHeader {
-    height: 63px;
+    height: 70px;
   }
   #mHeader .m_logo {
-    left: 14px;
-    width: 185px;
-    height: 30px;
-    margin-top: -15px;
+    left: 16px;
+    width: 138px;
+    height: 38px;
   }
-  #mHeader .m_logo a {
-    background-image: url("../images/m_logo.svg");
+
+  .btn_lang {
+    top: 20px;
+    right: 62px;
   }
 
   .btn_allmenu {
-    top: 10px;
-    right: 14px;
-    width: 42px;
-    height: 42px;
-    border-radius: 4px;
-    background-size: 24px;
+    top: 20px;
+    right: 16px;
   }
   .m_allmenu_wrap .m_allmenu_cont {
     width: 100%;
   }
-  .m_allmenu_wrap .m_allmenu_cont .m_allmenu_head {
-    height: 64px;
-    padding: 14px;
-  }
-
-  .m_allmenu_wrap .m_allmenu_cont .m_allmenu_login_join .login_join li a {
-    height: 48px;
-    padding: 14px 0;
-    font-size: 14px;
-    letter-spacing: -0.35px;
-  }
-  .m_allmenu_wrap .m_allmenu_cont .m_allmenu_login_join .login_join li a .ico {
-    background-size: 18px;
-    margin-right: 4px;
-  }
-
-  .m_allmenu_wrap .m_allmenu_cont .m_allmenu {
-    height: calc(100vh - 64px);
-    border-top: 2px solid #ff8d1a;
-  }
-  .m_allmenu_wrap .m_allmenu_cont .m_allmenu_login_join + .m_allmenu {
-    height: calc(100vh - 112px);
-    border-top: none;
-  }
-  .m_allmenu_wrap .m_allmenu_cont .m_allmenu .m_gnb > li > a {
-    font-size: 16px;
-    letter-spacing: -0.45px;
-  }
-  .m_allmenu_wrap .m_allmenu_cont .m_allmenu .m_gnb > li > .depth_box > .depth > li > a {
-    padding-left: 36px;
-    background-position: 14px center;
-    background-size: 12px;
-    font-size: 14px;
-    letter-spacing: -0.35px;
-  }
-
-  .openAllMenu .btn_allmenu {
-    background-image: url("../images/m_btn_allmenu_close_white.svg");
-  }
 
   .inner_center {
-    padding: 0 14px;
+    padding: 0 16px;
   }
 
   .mobile_br {
@@ -776,41 +732,44 @@
   }
 
   #container {
-    min-height: calc(100vh - 563px);
+    min-height: calc(100vh - 388px);
   }
 
-  .foot_link_wrap {
-    border: none;
-  }
-  .foot_link_wrap .inner_center {
-    padding: 0;
-  }
-  .foot_link_wrap .foot_link {
-    display: block;
-    border-left: none;
-  }
-  .foot_link_wrap .foot_link li {
-    width: 50%;
-    border-bottom: 1px solid #4d4d4d;
-  }
-  .foot_link_wrap .foot_link li:nth-child(2n) {
-    border-right: none;
-  }
-  .foot_link_wrap .foot_link li a {
-    font-size: 16px;
-    line-height: 62px;
-  }
-  .foot_link_wrap .foot_sns {
-    padding: 18px 0;
-    border-top: none;
-  }
-
-  .foot_address .foot_logo {
-    background-image: url("../images/m_foot_logo.svg");
-  }
-  .foot_address .txt_box {
+  .go_top {
+    width: 51px;
+    height: 49px;
     font-size: 14px;
-    line-height: 26px;
-    letter-spacing: -0.7px;
+    line-height: 17px;
+  }
+
+  .foot_link_wrap .foot_link {
+    justify-content: center;
+  }
+  .foot_address .txt_box .txt {
+  }
+  .foot_address {
+    padding: 14px 0 20px;
+  }
+  .foot_address .inner_center {
+    align-items: center;
+  }
+  .foot_address .foot_logo {
+    margin-top: 16px;
+  }
+  .foot_address .txt_box .txt {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .foot_address .txt_box .copyright {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .foot_address .txt_box .txt .ico_line.mobile_br {
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0;
   }
 }
