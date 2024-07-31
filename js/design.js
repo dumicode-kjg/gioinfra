@@ -42,12 +42,27 @@ function toggleAllMenu(){
 	$('body').toggleClass('openAllMenu');
 }
 
-//모바일 검색
-function toggleSearch(){
-	$('body').toggleClass('openSearch');
+//go top 위치
+$(function () {
+	chkGoTop();
+	$(window).scroll(function () { chkGoTop(); });
+});
+function chkGoTop() {
+	if ($(window).scrollTop() > 200) {
+		$('.go_top').show();
+	}
+	else {
+		$('.go_top').hide();
+	}
+
+	if ($(window).scrollTop() > $(document).outerHeight() - $(window).outerHeight() - $('#footer').outerHeight()) {
+		$('.go_top').addClass('end_top');
+
+	}
+	else {
+		$('.go_top').removeClass('end_top');
+	}
 }
-
-
 
 //popup
 // 접근성 관련 포커스 강제 이동
