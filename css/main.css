@@ -790,79 +790,6 @@
   background-color: #1d1d1d;
 }
 
-/* foot_banners */
-.foot_banners_wrap {
-  padding: 0 10px;
-  background-color: #f0f0f0;
-}
-.foot_banners {
-  position: relative;
-  max-width: 1400px;
-  padding: 0 50px;
-  margin: 0 auto;
-}
-.foot_banners .swiper-slide {
-  width: auto;
-  padding: 24px 10px;
-}
-.foot_banners .swiper-slide a {
-  display: block;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  overflow: hidden;
-}
-.foot_banners .swiper-slide a img {
-  width: 240px;
-  height: 58px;
-  object-fit: cover;
-}
-.foot_banners .swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  border: none;
-  border-radius: 100%;
-  background-image: url(../images/main/ico_arrow_left_gray.svg), url(../images/main/ico_arrow_left_white.svg);
-  background-color: #fff;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, -9999px;
-  background-size: 24px, 24px;
-  transform: translateY(-50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.foot_banners .swiper-button-prev:focus,
-.foot_banners .swiper-button-prev:hover {
-  background-color: #172d9d;
-  background-position: -9999px, center;
-}
-.foot_banners .swiper-button-next {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  border: none;
-  border-radius: 100%;
-  background-image: url(../images/main/ico_arrow_right_gray.svg), url(../images/main/ico_arrow_right_white.svg);
-  background-color: #fff;
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, -9999px;
-  background-size: 24px, 24px;
-  transform: translateY(-50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.foot_banners .swiper-button-next:focus,
-.foot_banners .swiper-button-next:hover {
-  background-color: #172d9d;
-  background-position: -9999px, center;
-}
-
 /* nodata */
 .nodata_box_wrap,
 .nodata_box {
@@ -1076,20 +1003,6 @@
   }
   .ma_intro .inbox .linkbox {
     margin: 32px auto 0;
-  }
-
-  .foot_banners_wrap {
-    padding: 0 35px;
-  }
-  .foot_banners {
-    padding: 0 60px;
-  }
-  .foot_banners .swiper-slide {
-    padding: 20px 9px;
-  }
-  .foot_banners .swiper-slide a img {
-    width: 180px;
-    height: 58px;
   }
 }
 
@@ -1306,21 +1219,5 @@
   }
   .ma_intro .inbox .linkbox a + a {
     margin: 12px 0 0 0;
-  }
-
-  .foot_banners_wrap {
-    padding: 0 16px;
-  }
-  .foot_banners {
-    padding: 0 50px;
-  }
-  .foot_banners .swiper-slide {
-    width: 100%;
-    padding: 20px 10px;
-  }
-  .foot_banners .swiper-slide a img {
-    width: 100%;
-    height: 58px;
-    object-fit: contain;
   }
 }
