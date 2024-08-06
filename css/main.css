@@ -26,13 +26,13 @@
   background-size: cover;
 }
 .ma_visual .inbox .visual_img::before {
-  content: "";
+  /* content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4); */
 }
 .ma_visual .inbox .txt01 {
   position: relative;
@@ -477,7 +477,7 @@
 }
 .ma_twobanner .inbox .btn_go:focus,
 .ma_twobanner .inbox .btn_go:hover {
-  background-color: #1d1d1d;
+  background-color: rgba(29, 29, 29, 0.1);
 }
 
 /* ma_gallery_bnzone */
@@ -787,7 +787,7 @@
 }
 .ma_intro .inbox .linkbox a:focus,
 .ma_intro .inbox .linkbox a:hover {
-  background-color: #1d1d1d;
+  background-color: rgba(29, 29, 29, 0.1);;
 }
 
 /* nodata */
